@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="AccountingNote7308.SystemAdmin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="fatma.hassan@gmail.com" />
+    <meta name="description" content="FTM" />
+
+    <link rel="stylesheet" href="../CSS/touching.css" type="text/css" />
+
+    <title>流水帳管理系統 - 後台</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="banner">
+                <div id='bannertitle'>流水帳管理系統 - 後台</div>
+            </div>
+            <div id="outer">
+                <div id="inner">
+                    <div id="left">
+                        <div class="verticalmenu">
+                            <ul>
+                                <li><a href="UserInfo.aspx">使用者資訊</a></li>
+                                <li><a href="AccountingList.aspx">流水帳管理</a></li>
+                                <li><a href="UserList.aspx">會員管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="content">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <h1><a>Copyright&copy;7308出去走走</a></h1>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
